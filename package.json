@@ -1,0 +1,37 @@
+{
+  "name": "AdvancedPortfolio",
+  "version": "1.0.0",
+  "description": "Kaupert's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "export": "next export",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "Juan Ignacio Kaupert",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.9",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "clipboard": "^2.0.8",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.2",
+    "package.json": "^2.0.1",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "three": "^0.133.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "prettier": "^2.4.1"
+  }
+}

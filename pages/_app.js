@@ -1,0 +1,19 @@
+import { ChakraProvider } from "@chakra-ui/provider";
+import Layout from "../components/Layouts/main";
+import Fonts from '../components/fonts'
+import theme from '../lib/theme'
+import { AnimatePresence } from "framer-motion";
+
+const WebSite = ({ Component, pageProps, router }) => {
+    return (
+        <ChakraProvider theme={theme}>
+        <Fonts />
+        <Layout router={router}>
+            <AnimatePresence exitBeforeEnter initial={true}>
+            <Component {...pageProps} key={router.route} />
+            </AnimatePresence>
+        </Layout>
+        </ChakraProvider>
+    );
+}
+export default WebSite;
